@@ -1,0 +1,65 @@
+<section>
+	<h3>Основы КЭД</h3>
+	<div style="padding: 0 30px 0 30px">
+		<p><em>Квантовая электродинамика</em> — полевая теория, описывающая взаимодействие между заряженными частицами и электромагнитным полем.</p>
+		<p>Лагранжиан определяется 2 константами: $e$, $m$, ($c=\hbar=1$)
+		</ul>
+	</div>
+
+	<p>$$\mathcal{L}_{QED}=\bar{\psi}\left( i\gamma^\mu\partial_\mu -e\gamma^\mu A_\mu - m \right)\psi - \frac{1}{4}\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu}$$</p>
+	<p>$$\mathcal{F}_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$$</p>
+	<div class="columns">
+		<p>Уравнение Дирака:
+			$$ \left( i \gamma^\mu \partial_\mu - m \right)\psi = e\gamma^\mu A_\mu\psi$$
+		</p>
+		<p>Уравнения Максвелла:
+			$$ \partial_\nu \mathcal{F}^{\nu \mu} = e\bar{\psi}\gamma^\mu\psi $$
+		</p>
+	</div>
+	<p>Представление взаимодействия</p>
+	<p>$$\mathcal{L} = \mathcal{L}_e + \mathcal{L}_\gamma + \mathcal{L}_{int}$$</p>
+	<p>$\mathcal{L}_e = \bar{\psi}\left( i\gamma^\mu\partial_\mu - m \right)\psi,\ \ \mathcal{L}_e = - \frac{1}{4}\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu},\ \ \mathcal{L}_{int}=- e\bar{\psi} \gamma^\mu \psi A_\mu$</p>
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление вазимодействия. Диаграммы Фейнмана</h3>
+	<p>$\mathcal{L}_e = \bar{\psi}\left( i\gamma^\mu\partial_\mu - m \right)\psi,\ \ \mathcal{L}_e = - \frac{1}{4}\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu},\ \ \mathcal{L}_{int}=- e\bar{\psi} \gamma^\mu \psi A_\mu$</p>
+	<div class="columns">
+		<p>Уравнение для свободных электронов:
+			$$ \left( i \gamma^\mu \partial_\mu - m \right)\psi = 0$$
+			$$\psi_\mathbf{p} = \frac{1}{\sqrt{2\varepsilon}}u_p e^{-i(\varepsilon t - \mathbf{pr})}, \ \varepsilon=\sqrt{\mathbf{p}^2+m^2}$$
+		</p>
+		<p>Уравнения для свободных фотонов:
+			$$ \partial_\nu \mathcal{F}^{\nu \mu} = 0 $$
+			$$A_{\mu, \mathbf{k}} = \sqrt{4\pi}\frac{\rm{e}_\mu}{\sqrt{2\omega}} e^{-i(\omega t - \mathbf{kr})}, \ \omega = |\mathbf{k}|$$
+		</p>
+	</div>
+	<p style="padding: 0 30px 0 30px">Так как электромагнитное взаимодействие слабое ($\alpha\approx1/137\ll 1$), его можно учитывать по теории возмущений. Для вычисления вероятности переходов между начальным и конечным состояниями (рассеяния), являющимися свободными решениями, удобна техника диаграмм Фенймана:</p>
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление вазимодействия. Диаграммы Фейнмана</h3>
+	<p style="padding: 0 30px 0 30px">Комптоновское рассеяние:</p>
+	<img style="border:4px solid red" src="../media/2.1.basis/Compton_full.png" width="60%">
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление вазимодействия. Диаграммы Фейнмана</h3>
+	<p style="padding: 0 30px 0 30px">Рассеяние Баба:</p>
+	<div class="columns" style="justify-items:center">
+		<img style="border:4px solid red" src="../media/2.1.basis/Bhabha_1.svg" width="30%">
+		<img style="border:4px solid red" src="../media/2.1.basis/Bhabha_2.svg" width="30%">
+	</div>
+
+	<p style="padding: 0 30px 0 30px">Рассеяние Мёллера:</p>
+	<div class="columns" style="justify-items:center">
+		<img style="border:4px solid red" src="../media/2.1.basis/Moller_1.svg" width="30%">
+		<img style="border:4px solid red" src="../media/2.1.basis/Moller_2.svg" width="30%">
+	</div>
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление вазимодействия. Диаграммы Фейнмана</h3>
+	<p style="padding: 0 30px 0 30px">Фотон-фотонное взаимодействие:</p>
+	<img style="border:4px solid red" src="../media/2.1.basis/Photon-photon_scattering.svg" width="30%">
+</section>

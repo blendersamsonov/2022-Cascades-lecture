@@ -8,32 +8,65 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<link rel="stylesheet" href="plugin/pointer/pointer.css" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<!-- Custom classes -->
+		<link rel="stylesheet" href="dist/custom.css">
 	</head>
 	<body>
 		<div class="reveal">
+			<div class="footer">
+				<div style="display: grid; grid-auto-flow: column; grid-template-columns: 1fr 1fr 1fr; justify-items: stretch; font-family: 'Computer Modern Sans Serif'; font-weight: bold; padding: 0 30px 0 0px">
+					<div>А. С. Самсонов (ИПФ РАН)</div>
+					<div style="justify-self:center">17.10.2022</div>
+					<div style="justify-self:left">Квантово-электродинамические каскады</div>
+				</div>
+			</div>
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
-				</section>
+				
+				<section data-external="slides/1.1.intro.html" data-state="no-toc-progress"></section>
+				
+				<section data-external="slides/2.0.QED.html"></section>
+				<section data-external="slides/2.1.basis.html"></section>
+				<section data-external="slides/2.2.external.html"></section>
+				<section data-external="slides/2.3.vacuum.html"></section>
+				<section data-external="slides/2.4.strong-fields.html"></section>
+				
+				<section data-external="slides/3.0.cascades.html"></section>
+				<section data-external="slides/3.1.kinetic.html"></section>
+				<section data-external="slides/3.2.PIC.html"></section>
+
+				<section data-external="slides/4.1.conclusion.html"></section>
+
 			</div>
 		</div>
 
+		<script>
+			if (window.self !== window.top) {
+			  document.body.className += " notes";
+			}
+		</script>
+
 		<script src="dist/reveal.js"></script>
+		<script src="dist/feyn/js/jquery-2.1.0.min.js"></script>
+		<script src="dist/feyn/js/jquery.feyn-1.0.1.min.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/pointer/pointer.js"></script>
 		<script>
+			Reveal.on( 'slidetransitionend', event => {
+				console.log( event.currentSlide );
+			});
+		</script>
+		<script>
+			
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
@@ -41,7 +74,33 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3, RevealPointer ],
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				center: false,
+
+				width: "100%",
+    			height:"100%",
+
+				controls: true,
+				controlsTutorial: false,
+				// controlsLayout: 'edges',
+
+				disableLayout: true,
+
+				pointer: {
+					key: "q", // key to enable pointer, default "q", not case-sensitive
+					color: "red", // color of a cursor, default "red" any valid CSS color
+					pointerSize: 8, // pointer size in px, default 12
+					alwaysVisible: false, // should pointer mode be always visible? default "false"
+				},
+
+				dependencies: [
+				{src: 'plugin/external/external.js', condition: function() 
+					{ return !!document.querySelector( '[data-external]' ); } },
+				{ src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(); } }
+				]
 			});
 		</script>
 	</body>
