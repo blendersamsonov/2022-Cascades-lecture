@@ -53,3 +53,12 @@
 .MathJax {
     font-size: 90% !important;
 }
+
+.refs {
+    font-family: "Computer Modern Sans Serif";
+    font-size: 0.6em;
+    bottom:0;
+    left:5px;
+    position:absolute;
+    text-align: left;
+}

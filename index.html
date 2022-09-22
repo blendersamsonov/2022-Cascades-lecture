@@ -20,16 +20,16 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="footer">
+			<!-- <div class="footer">
 				<div style="display: grid; grid-auto-flow: column; grid-template-columns: 1fr 1fr 1fr; justify-items: stretch; font-family: 'Computer Modern Sans Serif'; font-weight: bold; padding: 0 30px 0 0px">
 					<div>А. С. Самсонов (ИПФ РАН)</div>
 					<div style="justify-self:center">17.10.2022</div>
 					<div style="justify-self:left">Квантово-электродинамические каскады</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="slides">
-				
-				<section data-external="slides/1.1.intro.html" data-state="no-toc-progress"></section>
+
+				<section data-external="slides/1.1.intro.html"></section>
 				
 				<section data-external="slides/2.0.QED.html"></section>
 				<section data-external="slides/2.1.basis.html"></section>
@@ -38,8 +38,11 @@
 				<section data-external="slides/2.4.strong-fields.html"></section>
 				
 				<section data-external="slides/3.0.cascades.html"></section>
-				<section data-external="slides/3.1.kinetic.html"></section>
+				<section data-external="slides/3.1.rotating.html"></section>
 				<section data-external="slides/3.2.PIC.html"></section>
+				<section data-external="slides/3.3.standing-wave.html"></section>
+				<section data-external="slides/3.4.dipole-wave.html"></section>
+				<section data-external="slides/3.5.plane-wave.html"></section>
 
 				<section data-external="slides/4.1.conclusion.html"></section>
 
@@ -52,7 +55,15 @@
 			}
 		</script>
 
+		<script>
+			if (window.self !== window.top) {
+			  document.body.className += " notes";
+			}
+		</script>
+
 		<script src="dist/reveal.js"></script>
+		<script src="dist/feyn/js/jquery-2.1.0.min.js"></script>
+		<script src="dist/feyn/js/jquery.feyn-1.0.1.min.js"></script>
 		<script src="dist/feyn/js/jquery-2.1.0.min.js"></script>
 		<script src="dist/feyn/js/jquery.feyn-1.0.1.min.js"></script>
 		<script src="plugin/notes/notes.js"></script>

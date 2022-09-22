@@ -1,6 +1,17 @@
 <section>
-	<h3>КЭД каскад в неидеальном вакууме</h3>
+	<h3>КЭД каскад во вращающемся электрическом поле</h3>
+	<ul>Рассмотрим модельную задачу о развитии КЭД каскада в однородном вращающемся электрическом поле.
+		<li>Такая конфигурация реализуется, например, в узлах стоячей циркулярно-поляризованной волны</li>
+	</ul>
+	<p>$$\mathbf{E}(t)=\{E_0\cos\omega t, E_0\sin\omega t\}$$</p>
+	<p>$$\dot{\mathbf{p}}(t)=e\mathbf{E}$$</p>
+	<p>Решение: 
+		$$p_x(t)=p_{0x}+mc a_0 (\sin\omega t - \sin\omega t)$$
+		$$p_y(t)=p_{0y}-mc a_0 (\cos\omega t - \cos\omega t)$$
+	</p>
 	<p>A. M. Fedotov, N. B. Narozhny, G. Mourou, and G. Korn Phys. Rev. Lett. 105, 080402 (2010)</p>
+	<p>N. V. Elkina, A. M. Fedotov, I. Yu. Kostyukov, M. V. Legkov, N. B. Narozhny, E. N. Nerush, and H. Ruhl
+		Phys. Rev. ST Accel. Beams 14, 054401 (2011)</p>
 
 	<aside class="notes">
 		These are speaker notes
@@ -9,10 +20,42 @@
 
 <section>
 	<h3>КЭД каскад во вращающемся электрическом поле</h3>
-	<p>N. V. Elkina, A. M. Fedotov, I. Yu. Kostyukov, M. V. Legkov, N. B. Narozhny, E. N. Nerush, and H. Ruhl
-		Phys. Rev. ST Accel. Beams 14, 054401 (2011)</p>
+	<p>
+		$$p_x(t)=p_{0x}+mc a_0 (\sin\omega t - \sin\omega t)$$
+		$$p_y(t)=p_{0y}-mc a_0 (\cos\omega t - \cos\omega t)$$
+	</p>
+	Для позитрона ($e>0$) с нулевыми начальными условиями:
+	<p>
+		$$\varepsilon_e(t)=mc^2\sqrt{1+4a_0^2\sin^2\frac{\omega t}{2}}$$
+		$$\chi(t)=a_0\frac{\hbar\omega}{mc^2}\sqrt{1+4a_0^2\sin^2\frac{\omega t}{2}}$$
+	</p>
+	<p>Будем рассматривать такие амплитуды полей $a_0$ при которых значение $\chi_e\sim 1$ достигается за время $t_{acc} \ll 1/\omega$, тогда</p>
+	<div class="columns" style="align-items:center; justify-items: center;">
+		<p style="justify-self:right; padding-right:40px">
+			$$\varepsilon_e(t)\approx eE_0ct$$
+			$$\chi_e(t)\approx \frac{1}{2}{\left( \frac{E_0}{E_S} \right)}^2 \frac{mc^2\omega}{\hbar}t^2$$
+		</p>
+		<p style="justify-self:left; padding-left:40px">
+			$$\frac{1}{\omega\sqrt{a_0}} \ll t \ll \frac{1}{\omega}$$
+		</p>
+	</div>
 
-	<aside class="notes">
-		These are speaker notes
-	</aside>
+</section>
+
+<section>
+	<h3>КЭД каскад во вращающемся электрическом поле</h3>
+	<p>$$\chi_e(t)\approx \frac{1}{2}{\left( \frac{E_0}{E_S} \right)}^2 \frac{mc^2\omega}{\hbar}t^2$$</p>
+	<p>Определим время ускорения $t_{acc}$, при котором $\chi_e(t_{acc})=1$
+		$$t_{acc}\sim\frac{\hbar}{\alpha mc^2\mu}\sqrt{\frac{mc^2}{\hbar\omega}}$$
+	</p>
+	<p>$\dots$Дописать</p>
+	<p>
+		$$N(t)\sim e^{\Gamma t}$$
+		$$\Gamma \sim \frac{1}{t_e}\sim \alpha\mu^{1/4}\sqrt{\frac{mc^2\omega}{\hbar}}$$
+	</p>
+</section>
+
+<section>
+	<h3>КЭД каскад во вращающемся электрическом поле</h3>
+	<img src="../media/rotE-dynamics.png">
 </section>
