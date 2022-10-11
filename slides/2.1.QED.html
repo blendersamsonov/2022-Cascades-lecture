@@ -1,0 +1,77 @@
+<section style="top:40%">
+	<h2>Квантовая электродинамика (КЭД)</h2>
+
+	<aside class="notes">
+		These are speaker notes
+	</aside>
+</section>
+
+<section>
+	<h3>Основы КЭД</h3>
+	<div style="padding: 0 30px 0 30px">
+		<p><em>Квантовая электродинамика</em> — полевая теория, описывающая взаимодействие между заряженными частицами и электромагнитным полем.</p>
+	</div>
+	
+	<div class="fragment" style="padding: 0 30px 0 30px">
+		<p >Лагранжиан определяется 4 константами: $e$, $m$, $c$, $\hbar$
+		<p>$$\mathcal{L}_{QED}=\bar{\psi}\left( i\gamma^\mu\partial_\mu -e\gamma^\mu A_\mu - m \right)\psi - \frac{1}{4}\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu}$$</p>
+		<p>$$\mathcal{F}_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$$</p>
+	</div>
+	<div class="columns">
+		<p class="fragment">Уравнение Дирака:
+			$$ \left( i \gamma^\mu \partial_\mu - m \right)\psi = e\gamma^\mu A_\mu\psi$$
+		</p>
+		<p class="fragment">Уравнения Максвелла:
+			$$ \partial_\nu \mathcal{F}^{\nu \mu} = e\bar{\psi}\gamma^\mu\psi $$
+		</p>
+	</div>
+	<div class="fragment">
+		<p>Представление взаимодействия</p>
+		<p>$$\mathcal{L} = \mathcal{L}_e + \mathcal{L}_\gamma + \mathcal{L}_{int}$$</p>
+		<p>$\mathcal{L}_e = \bar{\psi}\left( i\gamma^\mu\partial_\mu - m \right)\psi,\ \ \mathcal{L}_e = - \frac{1}{4}\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu},\ \ \mathcal{L}_{int}=- e\bar{\psi} \gamma^\mu \psi A_\mu$</p>
+	</div>
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление взаимодействия. Диаграммы Фейнмана</h3>
+	<p>$$\mathcal{L} = \mathcal{L}_e + \mathcal{L}_\gamma + \mathcal{L}_{int}$$</p>
+	<p>$\mathcal{L}_e = \bar{\psi}\left( i\gamma^\mu\partial_\mu - m \right)\psi,\ \ \mathcal{L}_e = - \frac{1}{4}\mathcal{F}_{\mu\nu}\mathcal{F}^{\mu\nu},\ \ \mathcal{L}_{int}=- e\bar{\psi} \gamma^\mu \psi A_\mu$</p>
+	<div class="columns">
+		<p class="fragment">Уравнение для свободных электронов:
+			$$ \left( i \gamma^\mu \partial_\mu - m \right)\psi = 0$$
+			$$\psi_{\mathbf{p},s} = \frac{1}{\sqrt{2\varepsilon}}u_{p,s} e^{-i(\varepsilon t - \mathbf{pr})}, \ \varepsilon=\sqrt{\mathbf{p}^2+m^2}$$
+		</p>
+		<p class="fragment">Уравнения для свободных фотонов:
+			$$ \partial_\nu \mathcal{F}^{\nu \mu} = 0 $$
+			$$A_{\mathbf{k},\mu} = \sqrt{4\pi}\frac{\rm{e}_\mu}{\sqrt{2\omega}} e^{-i(\omega t - \mathbf{kr})}, \ \omega = |\mathbf{k}|$$
+		</p>
+	</div>
+	<p class="fragment" style="padding: 0 80px 0 80px; text-align: justify">Так как электромагнитное взаимодействие слабое ($\alpha\approx1/137\ll 1$), его можно учитывать по теории возмущений. Для вычисления вероятности переходов между начальным и конечным состояниями (рассеяния), являющимися свободными решениями, удобна техника диаграмм Фейнмана:</p>
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление взаимодействия. Диаграммы Фейнмана</h3>
+	<p style="padding: 0 30px 0 30px">Комптоновское рассеяние:</p>
+	<img  data-src="../media/2.1.basis/Compton_full.png" width="60%">
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление взаимодействия. Диаграммы Фейнмана</h3>
+	<p style="padding: 0 30px 0 30px">Рассеяние Баба:</p>
+	<div class="columns" style="justify-items:center">
+		<img data-src="../media/2.1.basis/Bhabha_1.svg" width="30%">
+		<img data-src="../media/2.1.basis/Bhabha_2.svg" width="30%">
+	</div>
+
+	<p style="padding: 0 30px 0 30px">Рассеяние Мёллера:</p>
+	<div class="columns" style="justify-items:center">
+		<img  data-src="../media/2.1.basis/Moller_1.svg" width="30%">
+		<img  data-src="../media/2.1.basis/Moller_2.svg" width="30%">
+	</div>
+</section>
+
+<section>
+	<h3>Основы КЭД. Представление взаимодействия. Диаграммы Фейнмана</h3>
+	<p style="padding: 0 30px 0 30px">Фотон-фотонное взаимодействие:</p>
+	<img  data-src="../media/2.1.basis/Photon-photon_scattering.svg" width="30%">
+</section>

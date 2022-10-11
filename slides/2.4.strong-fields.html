@@ -1,69 +1,172 @@
 <section>
 	<h3>Критическое поле КЭД</h3>
-		<p>$E_{cr} = {m^2c^3}/{e\hbar} \approx 1.3\times10^{16}\ \text{В/м}$, $B_{cr} = {m^2c^3}/{e\hbar} \approx 4.4\times10^{13}\ \text{Гс}$</p>
-		<div class="columns", style="grid-template-columns: 1fr 1fr; margin: 0 30px 0 30px; align-items: center;">
-			<div>Поле вблизи астрофизических объектов (нейтронные звёзды, пульсары, чёрные дыры)
-				<img src="../media/2.4.strong-fields/neutron-star-1.gif" width="50%">
-				<img src="../media/2.4.strong-fields/neutron-star-2.jpg" width="50%">
+		<p>
+			$$E_{cr} = {m^2c^3}/{e\hbar} \approx 1.3\times10^{16}\ \text{В/м}$$
+			$$B_{cr} = {m^2c^3}/{e\hbar} \approx 4.4\times10^{13}\ \text{Гс}$$
+		</p>
+		<div class="r-stack">
+			<div class="fragment fade-out" data-fragment-index="1">
+				<div class="columns", style="grid-template-columns: 1fr 1fr; margin: 0 30px 0 30px; align-items: center;">
+					<div>Поле вблизи астрофизических объектов (нейтронные звёзды, пульсары, чёрные дыры)
+						<div>
+							<img data-src="../media/2.4.strong-fields/neutron-star-1.gif" width="50%">
+							<img data-src="../media/2.4.strong-fields/neutron-star-2.jpg" width="50%">
+						</div>
+					</div>
+					<div>Поле вблизи ядер тяжёлых атомов
+						<img data-src="../media/2.4.strong-fields/uranium.gif" width="60%">
+					</div>
+				</div>
 			</div>
-			<div>Поле вблизи ядер тяжёлых атомов
-				<img src="../media/2.4.strong-fields/uranium.gif" width="60%">
+			<div class="fragment fade-in" data-fragment-index="1">
+				Можно ли наблюдать нелинейные КЭД процессы в лаборатории?
+				<p class="fragment">Напряжённость ЭМ-поля не является Лоренц-инвариантом и может быть существенно увеличена в движущейся системе, связанной, например, с высокоэнергичной частицей.</p>
+				<p class="fragment">Вероятности КЭД процессов зависят от <u>Лоренц-инварианта</u> $\chi$, являющегося по сути отношением поля в системе отсчёта частицы к критическому полю КЭД
+					$$\chi= \frac{1}{E_{cr}mc}\sqrt{{\left(\frac{\varepsilon}{c}\mathbf{E+p\times B}\right)}^2-{(\mathbf{pE})}^2}$$</p>
+				<p class="fragment">
+					<img data-src="../media/2.4.strong-fields/interactions.svg" width="50%">
+				</p>
 			</div>
 		</div>
 </section>
 
 <section>
-	<h3>Критическое поле КЭД</h3>
-		<p>$E_{cr} = {m^2c^3}/{e\hbar} \approx 1.3\times10^{16}\ \text{В/м}$</p>
-		<p>$B_{cr} = {m^2c^3}/{e\hbar} \approx 4.4\times10^{13}\ \text{Гс}$</p>
-		Как достичь таких амплитуд полей в лаборатории?
-		<li style="padding: 0 30px 0 30px">Напряжённость ЭМ-поля не является Лоренц-инвариантом и может быть существенно увеличена в движущейся системе, связанной, например, с высокоэнергичной частицей:</li>
-		<img src="../media/2.4.strong-fields/collision.png" width="70%">
-</section>
-
-<section>
 	<h3>Установки для термоядерного синтеза</h3>
-	<ul>
-		<li>NIF</li>
-		<li>УФЛ-2М</li>
-	</ul>
+	<div style="display: grid; grid-auto-flow: column; grid-template-columns: 1fr 1fr">
+		<div>
+			<p>National Ignition Facility (NIF), США</p>
+			<img data-src="../media/2.4.strong-fields/facilities/NIF.png" height="400px">
+			<ul>
+				<li>192 канала</li>
+				<li>Длина волны — 1052 нм</li>
+				<li>Энергия импульсов — 2 МДж</li>
+				<li>Длительность импульсов — 4 нс</li>
+				<li>Пиковая мощность — 0.5 ПВт</li>
+			</ul>
+		</div>
+		<div>
+			<p>УФЛ-2М, г. Саров</p>
+			<img data-src="../media/2.4.strong-fields/facilities/Sarov.jpg" height="400px">
+			<ul>
+				<li>192 канала</li>
+				<li>Длина волны — 530 нм</li>
+				<li>Энергия импульсов — 4.6 МДж</li>
+				<li>Длительность импульсов &#8764; 1 нс</li>
+				<li>Пиковая мощность &#8764; 1 ПВт</li>
+			</ul>
+		</div>
+	</div>
 </section>
 
 <section>
 	<h3>Современные фемтосекундные лазерные установки</h3>
-	<ul>
-		<li>PEARL</li>
-		<li>CORELS</li>
-	</ul>
+	<div style="display: grid; grid-auto-flow: column; grid-template-columns: 1fr 1fr">
+		<div>
+			<p>PEARL, г. Нижний Новгород</p>
+			<div class="r-stack">
+				<img data-src="../media/2.4.strong-fields/facilities/Pearl1.png" height="400px">
+				<div class="fragment">
+					<img data-src="../media/2.4.strong-fields/facilities/Pearl2.jpg" height="400px">
+				</div>
+			</div>
+			<ul>
+				<li>Длина волны — 910 нм</li>
+				<li>Энергия импульсов — 24 Дж</li>
+				<li>Длительность импульсов — 43 фс</li>
+				<li>Пиковая мощность — 0.56 ПВт</li>
+			</ul>
+		</div>
+		<div>
+			<p>CoReLS, Корея</p>
+			<div class="r-stack">
+				<img data-src="../media/2.4.strong-fields/facilities/Corels2.jpeg" height="400px">
+				<div class="fragment">
+					<img data-src="../media/2.4.strong-fields/facilities/Corels1.jpeg" height="400px">
+				</div>
+			</div>
+			<ul>
+				<li>Длина волны — 910 нм</li>
+				<li>Энергия импульсов &#8764; 80 Дж</li>
+				<li>Длительность импульсов — 20 фс</li>
+				<li>Пиковая мощность — 4 ПВт</li>
+			</ul>
+		</div>
+	</div>
 </section>
 
 <section>
 	<h3>Проекты лазерных установок 10-ПВт уровня</h3>
+	<div style="display: grid; grid-auto-flow: column; grid-template-columns: 1fr 1fr 1fr">
+		<div>
+			<p>ELI, Румыния, Чехия</p>
+			<div class="r-stack">
+				<img data-src="../media/2.4.strong-fields/facilities/ELI1.jpg" height="400px">
+				<div class="fragment">
+					<img data-src="../media/2.4.strong-fields/facilities/ELI2.jpg" height="400px">
+				</div>
+			</div>
+		</div>
+		<div>
+			<p>SULF, Китай</p>
+			<div class="r-stack">
+				<img data-src="../media/2.4.strong-fields/facilities/SIOM.png" height="400px">
+			</div>
+		</div>
+		<div>
+			<p>Apollon, Франция</p>
+			<div class="r-stack">
+				<img data-src="../media/2.4.strong-fields/facilities/Apollon.jpg" height="400px">
+			</div>
+		</div>
+	</div>
 	<ul>
-		<li>ELI</li>
-		<li>SIOM</li>
-		<li>Apollon</li>
+		<li>Длина волны &#8764; 1 мкм</li>
+		<li>Энергия импульсов &#8764; 100 Дж</li>
+		<li>Длительность импульсов &#8764; 10 фс</li>
+		<li>Пиковая мощность &#8764; 10 ПВт</li>
 	</ul>
+</div>
 </section>
 
 <section>
 	<h3>Проекты лазерных установок 100-ПВт уровня</h3>
-	<ul>
-		<li>XCELS</li>
-		<li>ELI</li>
-		<li>SEL</li>
-	</ul>
+	<div class="columns" style="grid-template-columns: 1fr 1.7fr; margin: 0 30px 0 30px; align-items: center;">
+		<div>
+			<img src="../media/2.4.strong-fields/facilities/XCELS.png" width="90%">
+			<img src="../media/2.4.strong-fields/facilities/XCELS-focusing.png" width="90%">
+		</div>
+		<div>
+			<img src="../media/2.4.strong-fields/facilities/Map.png" width="90%">
+		</div>
+	</div>
 </section>
 
-
 <section>
-	<h3>Ускорители частиц</h3>
-	<ul>
-		<li>FACET-II</li>
-		<li>DESY</li>
-	</ul>
+	<h3>Первые эксперименты по детектированию нелинейных КЭД эффектов</h3>
+	
+	<p>Эксперименты 2018 г. по исследованию реакции излучения в квантовом режиме ($\chi \gtrsim 1$) на лазерной установке Astra Gemini (Rutherford Appleton Laboratory, UK)</p>
+	
+	<div class="r-stack">
+		<div class="fragment fade-out" data-fragment-index="1">
+			<img data-src="../media/2.4.strong-fields/Poder-Cole/Setup.png" height="700px">
+		</div>
+		<div class="fragment fade-in-then-out" data-fragment-index="1">
+			<img data-src="../media/2.4.strong-fields/Poder-Cole/Spectra.png" height="700px">
+		</div>
+		<div class="fragment fade-in-then-out" data-fragment-index="2">
+			<img data-src="../media/2.4.strong-fields/Poder-Cole/Models.png" height="700px">
+		</div>
+		<div class="fragment fade-in" data-fragment-index="3">
+			<img data-src="../media/2.4.strong-fields/Poder-Cole/Conclusion.png" height="700px">
+		</div>
+	</div>
 
-	<aside class="notes">
-		These are speaker notes
-	</aside>
+	<div class="refs" style="top:1030px">
+		Cole, J. M. et. al. <em>Phys. Rev. X</em>, <strong>8</strong>, 011020 (2018):
+		<a href="https://doi.org/10.1103/PhysRevX.8.011020" target="_blank" rel="noopener noreferrer">link
+		</a> <br>
+		Poder, K. et. al. <em>Phys. Rev. X</em>, <strong>8</strong>, 031004 (2018):
+		<a href="https://doi.org/10.1103/PhysRevX.8.031004" target="_blank" rel="noopener noreferrer">link
+		</a>
+	</div>
 </section>

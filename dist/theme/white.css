@@ -4,7 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 /* /* @import url(./fonts/source-sans-pro/source-sans-pro.css); */
-@import url(./fonts/computer-modern/computer-modern.css); */
+/*@import url(./fonts/computer-modern/computer-modern.css); */
 @import url(./fonts/computer-modern/computer-modern.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff;
@@ -29,7 +29,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading-text-shadow: none;
   --r-heading-font-weight: bold;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 2.2em;
+  --r-heading1-size: 1.9em;
   --r-heading2-size: 1.6em;
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
@@ -122,7 +122,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h1 {
   font-family: "Computer Modern Sans Serif Demi Condensed";
   font-size: var(--r-heading1-size);
-  padding: 20px 40px 20px 40px;
+  padding: 20px 20px 20px 20px;
 }
 
 .reveal h2 {

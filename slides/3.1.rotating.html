@@ -1,63 +1,113 @@
 <section>
 	<h3>КЭД каскад во вращающемся электрическом поле</h3>
-	<ul>Рассмотрим модельную задачу о развитии КЭД каскада в однородном вращающемся электрическом поле.
-		<li>Такая конфигурация реализуется, например, в узлах стоячей циркулярно-поляризованной волны</li>
-	</ul>
-	<p>$$\mathbf{E}(t)=\{E_0\cos\omega t, E_0\sin\omega t\}$$</p>
-	<p>$$\dot{\mathbf{p}}(t)=e\mathbf{E}$$</p>
-	<p>Решение: 
-		$$p_x(t)=p_{0x}+mc a_0 (\sin\omega t - \sin\omega t)$$
-		$$p_y(t)=p_{0y}-mc a_0 (\cos\omega t - \cos\omega t)$$
-	</p>
-	<p>A. M. Fedotov, N. B. Narozhny, G. Mourou, and G. Korn Phys. Rev. Lett. 105, 080402 (2010)</p>
-	<p>N. V. Elkina, A. M. Fedotov, I. Yu. Kostyukov, M. V. Legkov, N. B. Narozhny, E. N. Nerush, and H. Ruhl
-		Phys. Rev. ST Accel. Beams 14, 054401 (2011)</p>
+	<div class="r-stack">
+		<div class="fragment fade-out" data-fragment-index="3">
+			Рассмотрим модельную задачу о развитии КЭД каскада в однородном вращающемся (с частотой $\omega$) электрическом поле. Такая конфигурация реализуется, например, в узлах стоячей циркулярно-поляризованной волны
+			<div class="fragment" data-fragment-index="1">
+				<p>$$\mathbf{E}(t)=\{a_0\cos t, a_0\sin t\}$$</p>
+				<p>$$\dot{\mathbf{p}}(t)=\pm\mathbf{E}$$</p>
+				<p>Нормировка:
+					\[\begin{align}
+					&& x \leftarrow \frac{\omega x}{c} && t \leftarrow \omega t &&  E \leftarrow \frac{eE}{mc\omega} && p \leftarrow \frac{p}{mc} &&
+					\end{align}\]
+				</p>
+			</div>
+			<div class="fragment" data-fragment-index="2">
+				<p>Решение (для позитрона): 
+					$$p_x(t)=p_{0x} + a_0 (\sin t - \sin t_0)$$
+					$$p_y(t)=p_{0y} - a_0 (\cos t - \cos t_0)$$
+				</p>
+			</div>
+		</div>
 
-	<aside class="notes">
-		These are speaker notes
-	</aside>
-</section>
+		<div class="fragment fade-out" data-fragment-index="5">
+			<div class="fragment fade-in" data-fragment-index="3">
+				<p>
+					$$p_x(t)=p_{0x}+ a_0 (\sin t - \sin t_0)$$
+					$$p_y(t)=p_{0y}- a_0 (\cos t - \cos t_0)$$
+				</p>
+				При нулевых начальных условиях:
+				<p>
+					$$\gamma_e(t)=\sqrt{1+4a_0^2\sin^2\frac{ t}{2}}, \  \ \ \chi(t)=\frac{a_0}{a_S}\sqrt{1+4a_0^2\sin^4\frac{ t}{2}}$$
+					$$a_S = \frac{eE_{cr}}{mc\omega}\equiv\frac{mc^2}{\hbar\omega}$$
+				</p>
+				<div class="fragment" data-fragment-index="4">
+					<p style="padding: 0 80px 0 80px">Будем рассматривать такие амплитуды полей $a_0$ при которых значение $\chi_e\sim 1$ достигается за время $t_{acc} \ll 1$, тогда</p>
+					<div class="columns" style="align-items:center; justify-items: center;">
+						<p style="justify-self:right; padding-right:40px">
+							$$\gamma_e(t)\approx a_0 t$$
+							$$\chi_e(t)\approx \frac{a_0^2 t^2}{2 a_S}$$
+						</p>
+						<p style="justify-self:left; padding-left:40px">
+							$$\frac{1}{\sqrt{a_0}} \ll t \ll 1$$
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<section>
-	<h3>КЭД каскад во вращающемся электрическом поле</h3>
-	<p>
-		$$p_x(t)=p_{0x}+mc a_0 (\sin\omega t - \sin\omega t)$$
-		$$p_y(t)=p_{0y}-mc a_0 (\cos\omega t - \cos\omega t)$$
-	</p>
-	Для позитрона ($e>0$) с нулевыми начальными условиями:
-	<p>
-		$$\varepsilon_e(t)=mc^2\sqrt{1+4a_0^2\sin^2\frac{\omega t}{2}}$$
-		$$\chi(t)=a_0\frac{\hbar\omega}{mc^2}\sqrt{1+4a_0^2\sin^2\frac{\omega t}{2}}$$
-	</p>
-	<p>Будем рассматривать такие амплитуды полей $a_0$ при которых значение $\chi_e\sim 1$ достигается за время $t_{acc} \ll 1/\omega$, тогда</p>
-	<div class="columns" style="align-items:center; justify-items: center;">
-		<p style="justify-self:right; padding-right:40px">
-			$$\varepsilon_e(t)\approx eE_0ct$$
-			$$\chi_e(t)\approx \frac{1}{2}{\left( \frac{E_0}{E_S} \right)}^2 \frac{mc^2\omega}{\hbar}t^2$$
-		</p>
-		<p style="justify-self:left; padding-left:40px">
-			$$\frac{1}{\omega\sqrt{a_0}} \ll t \ll \frac{1}{\omega}$$
-		</p>
+		<div class="fragment fade-out" data-fragment-index="8">
+			<div class="fragment fade-in" data-fragment-index="5">
+				<p>$$\chi_e(t)\approx \frac{a_0^2 t^2}{2 a_S}$$</p>
+				<p>Определим время ускорения $t_{acc}$, при котором $\chi_e(t_{acc})=1$
+					$$t_{acc}\sim\frac{\sqrt{a_S}}{a_0}$$
+				</p>
+				<div class="fragment" data-fragment-index="6">
+					<p>Характерное "время жизни" электрона между излучениями:
+						$$t_e \sim \frac{1}{W_{rad}}$$
+					</p>
+				</div>
+				<div class="fragment" data-fragment-index="7">
+					<p>В момент излучения:</p>
+					\[\begin{align}
+					&& \gamma \approx \frac{a_0}{W_{rad}} && \chi \approx \frac{a_0^2}{2a_S W_{rad}^2}
+					\end{align}
+					\]
+				</div>
+			</div>
+		</div>
+
+		<div class="fragment fade-out" data-fragment-index="11">
+			<div class="fragment fade-in" data-fragment-index="8">
+				<p style="margin:0 0 0 0">В момент излучения:</p>
+				\[\begin{align}
+				&& \gamma \approx \frac{a_0}{W_{rad}} && \chi \approx \frac{a_0^2}{2a_S W_{rad}^2}
+				\end{align}
+				\]
+				<p style="margin: 0 0 0 0">Подставим в выражение для вероятности при $\chi \gg 1$:</p>
+				<p style="margin: 0 0 0 0">$$W_{rad} \sim \frac{\alpha a_S}{\gamma} \chi^{2/3}$$</p>
+				<div class="fragment" data-fragment-index="9">
+					<p style="margin: 0 0 0 0">Получим:</p>
+					\[\begin{align}
+					&& \gamma \approx \sqrt{a_S} {\left(\frac{a_0}{\alpha a_S} \right)}^{3/4} && t_e \approx \frac{1}{\alpha \sqrt{a_S}} {\left(\frac{a_0}{\alpha a_S} \right)}^{-1/4} 
+					\end{align}
+					\]
+				</div>
+				<div class="fragment" data-fragment-index="10">
+					<p style="padding: 0 80px 0 80px">Важно, что для развития каскада необходимо $t_e \gtrsim t_{acc}$, т.к. в таком случае электрон излучает фотон при $\chi \gtrsim 1$, при этом теряет почти половину своей энергии, поэтому для фотонов $\varepsilon_\gamma \sim \varepsilon_e$, $\chi_\gamma \sim \chi_e$. Условие $t_e \gtrsim t_{acc}$ выполняется при $a_0 /\alpha a_S \gtrsim 1$</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fragment fade-in-then-out" data-fragment-index="11">
+			<p style="padding: 0 80px 0 80px">При $a_0 /\alpha a_S \gtrsim 1$ и $\chi \gg 1$ формулы для вероятности излучения фотона электроном $W_{rad}$ и вероятности образования электрон-позитронной пары из фотона $W_{e^+e^-}$ отождествляются. В таком случае число частиц удваивается за время порядка $t_e$, т.е.</p>
+			<p>
+				$$N_{e^\pm,\gamma}(t)\sim e^{\Gamma t}$$
+				$$\Gamma \sim \frac{1}{t_e}\sim \alpha \sqrt{a_S} {\left(\frac{a_0}{\alpha a_S} \right)}^{1/4} $$
+			</p>
+		</div>
+		<div class="fragment fade-in-then-out" data-fragment-index="12">
+			<img src="../media/3.1-rotating/Scheme.png" width="60%">
+		</div>
+		<div class="fragment fade-in" data-fragment-index="13">
+			<img src="../media/3.1-rotating/rotE-dynamics.png" width="90%">
+		</div>
 	</div>
 
-</section>
-
-<section>
-	<h3>КЭД каскад во вращающемся электрическом поле</h3>
-	<p>$$\chi_e(t)\approx \frac{1}{2}{\left( \frac{E_0}{E_S} \right)}^2 \frac{mc^2\omega}{\hbar}t^2$$</p>
-	<p>Определим время ускорения $t_{acc}$, при котором $\chi_e(t_{acc})=1$
-		$$t_{acc}\sim\frac{\hbar}{\alpha mc^2\mu}\sqrt{\frac{mc^2}{\hbar\omega}}$$
-	</p>
-	<p>$\dots$Дописать</p>
-	<p>
-		$$N(t)\sim e^{\Gamma t}$$
-		$$\Gamma \sim \frac{1}{t_e}\sim \alpha\mu^{1/4}\sqrt{\frac{mc^2\omega}{\hbar}}$$
-	</p>
-</section>
-
-<section>
-	<h3>КЭД каскад во вращающемся электрическом поле</h3>
-	<img src="../media/rotE-dynamics.png">
+	<div class="refs" style="top:1030px">
+		A. M. Fedotov, N. B. Narozhny, G. Mourou, and G. Korn <em>Phys. Rev. Lett.</em> <strong>105</strong>, 080402 (2010): <a href="https://doi.org/10.1103/PhysRevLett.105.080402" target="_blank" rel="noopener noreferrer">link</a> <br>
+		N. V. Elkina, et. al. <em>Phys. Rev. ST Accel. Beams</em> <strong>14</strong>, 054401 (2011): <a href="https://doi.org/10.1103/PhysRevSTAB.14.054401" target="_blank" rel="noopener noreferrer">link</a>
+	</div>
 </section>
 
 <section>
@@ -84,6 +134,11 @@
 			\nabla\times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}, \\
 			\nabla\times \mathbf{B} &= \frac{\partial \mathbf{E}}{\partial t} + \int f_{e^+} \mathbf{v}_{e^+} d\mathbf{p} - \int f_{e^-} \mathbf{v}_{e^-} d\mathbf{p} ,
 			\end{align}\]
+		</div>
+
+		<div class="refs" style="top:1030px">
+			A. M. Fedotov, N. B. Narozhny, G. Mourou, and G. Korn <em>Phys. Rev. Lett.</em> <strong>105</strong>, 080402 (2010): <a href="https://doi.org/10.1103/PhysRevLett.105.080402" target="_blank" rel="noopener noreferrer">link</a> <br>
+			N. V. Elkina, et. al. <em>Phys. Rev. ST Accel. Beams</em> <strong>14</strong>, 054401 (2011): <a href="https://doi.org/10.1103/PhysRevSTAB.14.054401" target="_blank" rel="noopener noreferrer">link</a>
 		</div>
 	</div>
 
